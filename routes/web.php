@@ -14,5 +14,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {  return view('home');  })->name('home');
+Route::get('/',  [CalculatorController::class, 'getHome' ])->name('home');
 Route::post('/resultado', [CalculatorController::class, 'getResult' ])->name('resultado');

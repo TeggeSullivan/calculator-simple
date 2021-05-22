@@ -20,12 +20,12 @@
                 <td>Resultado</td>
             </tr>
             <tr>
-                <td>$first</td>
-                <td>$operator</td>
-                <td>$second</td>
-                <td>$total</td>
+                <td>{{$first}}</td>
+                <td>{{$operator}}</td>
+                <td>{{$second}}</td>
+                <td>{{$total}}</td>
             </tr>
-            <tr><th colspan="4"><button><a href="{{route('home')}}"></a></button></th></tr>
+            <tr><th colspan="4"><button><a href="{{route('home')}}">Fazer novo Cálculo!</a></button></th></tr>
         </tbody>
     </table>
 </body>
