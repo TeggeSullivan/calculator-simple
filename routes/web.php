@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CalculatorController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,7 +14,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    //return view('welcome');
-	echo "<h1>Página inicial</h1>";
-});
+Route::get('/', function () {  return view('home');  })->name('home');
+Route::post('/resultado', [CalculatorController::class, 'getResult' ])->name('resultado');
